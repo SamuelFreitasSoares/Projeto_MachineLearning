@@ -1,4 +1,3 @@
-# obter info sobre as colunas do dataframe
 
 import pandas as pd
 
@@ -13,7 +12,6 @@ print(df.describe())
 print(df['bioma'].value_counts())
 print(df.isnull().sum())
 
-# o describre encontrou valor negativo para vegetação natrual, vou dar uma olhada
 negativos = df[df['vegetacao_natural'] < 0]
 print("Número de registros com vegetação natural negativa:", len(negativos))
 
